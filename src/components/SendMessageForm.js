@@ -26,7 +26,8 @@ export default class SendMessageForm extends React.Component {
     return (
       <form className="send-message-form"
             onSubmit={this.handleSubmit}>
-        <input onChange={this.handleChange}
+        <input className="message-input"
+               onChange={this.handleChange}
                placeholder="Type your message and hit ENTER"
                value={this.state.message}
                type="text"/>

@@ -19,3 +19,8 @@ In order to use the app with a friend, simply follow the instructions below.
 ## Tech Stack
 - [Create React App](https://github.com/facebook/create-react-app)
 - [Pusher Chatkit](https://pusher.com/chatkit)
+
+## Background on Design Decisions
+ This project was my first exposure to writing a chat app. My first thought for how to create a simple messenger with near-real-time, 2-directional communication was to hand roll a backend using Rails and websockets. This option was tempting because I'm most familiar with Rails and its go-to test suites, and because I could easily have built a frontend directly into the one service. I had never worked with websockets before, though, and I knew other newbies who had struggled with it in the past. Because this would have taught me the most and given me the greatest control over the message exchange, I still would have gone down this route given additional time.
+
+ Because the guidelines for time were 1-4 hours, however, I started investigating alternatives. I came across Pusher's Chatkit API, which had excellent documentation and appeared to be easy to implement. Because Pusher's service took care of the full message exchange and storage, and because I know that I can be slow at figuring out new technologies, this seemed like the best way to deliver an MVP in close to 4 hours. (Which ended up more like 6-8 hours, including documentation time and fighting with an attempted Heroku deploy.) I would only need to focus on a frontend that consumed the Chatkit API. This choice would also allow me to play around with testing options, which I've had very little experience with in React.

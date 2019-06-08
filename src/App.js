@@ -4,7 +4,7 @@ import MessageList from './components/MessageList'
 import SendMessageForm from './components/SendMessageForm'
 import './App.css';
 
-import { instanceLocator, tokenUrl } from './config'
+import { instanceLocator, chatkitUrl } from './config'
 
 export default class App extends React.Component {
   constructor() {
@@ -19,7 +19,7 @@ export default class App extends React.Component {
       instanceLocator: instanceLocator,
       userId: 'User 1',
       tokenProvider: new Chatkit.TokenProvider({
-        url: tokenUrl
+        url: chatkitUrl
       })
     })
 
