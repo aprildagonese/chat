@@ -21,7 +21,7 @@ class MessageList extends React.Component {
             <div className="message-list">
                 {DUMMY_DATA.map((message, index) => {
                     return (
-                        <div>{message.text}</div>
+                        <div>{message.senderId}: {message.text}</div>
                     )
                 })}
             </div>

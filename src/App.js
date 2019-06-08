@@ -1,4 +1,5 @@
 import './App.css';
+import Chatkit from '@pusher/chatkit'
 import React from 'react'
 import MessageList from './components/MessageList'
 import SendMessageForm from './components/SendMessageForm'
@@ -7,7 +8,7 @@ import NewRoomForm from './components/NewRoomForm'
 
 function App() {
   return (
-    <div className="App">
+    <div className="app">
       <RoomList />
       <MessageList />
       <SendMessageForm />
