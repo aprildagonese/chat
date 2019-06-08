@@ -19,7 +19,6 @@ export default class App extends React.Component {
   componentDidMount() {
     const chatManager = new Chatkit.ChatManager({
       instanceLocator: instanceLocator,
-      key: key,
       userId: 'adagonese',
       tokenProvider: new Chatkit.TokenProvider({
         url: tokenUrl
