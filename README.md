@@ -2,7 +2,7 @@
 
 This project is a simple chat app that allows 2 users to exchange messages in a browser window, simply running on localhost alone.
 
-In order to use the app with a friend, simply follow the instructions below.
+In order to use the app with a friend, follow the instructions below.
 
 ## Instructions
 1. Make a friend. Tell them to follow these instructions.
