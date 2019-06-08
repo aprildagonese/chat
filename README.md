@@ -9,7 +9,8 @@ In order to use the app with a friend, simply follow the instructions below.
 2. Fork and clone this repository into the directory of your choice.
 3. Run `npm install` to install dependencies.
 4. Open the app in your preferred code editor, and navigate to `chat/src/app.js`
-5. With your friend, determine who will be "User 1" and who will be "User 2". If you are "User 1", skip this step and move to step 6. If you are "User 2", change the `userId` field inside the `componentDidMount` function within `app.js` to `User 2` (it will be set as `User 1` by default.)
+5. With your friend, determine who will be "User 1" and who will be "User 2". If you are "User 1", skip this step and move to step 6. If you are "User 2", find the `componentDidMount` function inside of `app.js`, and change the `userId` field to `User 2` (it will be set as `User 1` by default.)
+![Instructional image](src/assets/instruction1.png)
 6. Run `npm start`
 7. Your browser should automatically load your local server, but if it does not, navigate to [http://localhost:3000](http://localhost:3000). The page will reload if you make edits.
 8. Type a message and click enter to see your message displayed in the room.
