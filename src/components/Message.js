@@ -1,10 +1,11 @@
 import React from 'react'
 
-export default class Message extends React.Component {
-  render() {
-    return (
-      <div className="message">
-      </div>
-    )
-  }
+function Message(props) {
+  return (
+    <div className="message">
+      {props.senderId}: {props.text}
+    </div>
+  )
 }
+
+export default Message
