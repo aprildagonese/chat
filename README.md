@@ -1,8 +1,6 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a simple chat app that allows 2 users to exchange messages in a room, just by running on localhost alone.
 
-## Available Scripts
-
-In the project directory, you can run:
+In order to use the app with a friend, simply follow the instructions below.
 
 ### `npm start`
 

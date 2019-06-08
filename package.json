@@ -3,9 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@pusher/chatkit": "^0.7.18",
     "@pusher/chatkit-client": "^1.5.0",
-    "chatkit": "0.0.1-security",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-scripts": "3.0.1",
@@ -32,7 +30,7 @@
       "last 1 safari version"
     ]
   },
-  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "description": "A simple chat app, build in hopes of impressing Eric Spery",
   "main": "index.js",
   "devDependencies": {},
   "repository": {
