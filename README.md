@@ -7,7 +7,7 @@ In order to use the app with a friend, simply follow the instructions below.
 ## Instructions
 1. Make a friend. Tell them to follow these instructions.
 2. Fork and clone this repository into the directory of your choice.
-3. Run `npm install` to install dependencies/
+3. Run `npm install` to install dependencies.
 4. Open the app in your preferred code editor, and navigate to `chat/src/app.js`
 5. With your friend, determine who will be "User 1" and who will be "User 2". If you are "User 1", skip this step and move to step 6. If you are "User 2", change the `userId` field inside the `componentDidMount` function within `app.js` to `User 2` (it will be set as `User 1` by default.)
 6. Run `npm start`
