@@ -29,3 +29,7 @@ In order to use the app with a friend, follow the instructions below.
  1. MessageList does not autoscroll to the bottom on overflow. (It does scroll, but you have to do it manually any time new messages are added.)
  2. App does not currently deploy to Heroku. Production config likely needs adjusting.
  3. The app is currently using Chatkit's test token provider in place of any real authentication.
+
+## Test Coverage
+Test coverage is currently at about 80%, with untested lines mainly limited to interaction with Chatkit's API. I looked briefly at implementing mocks to improve coverage, but since I was already over time on the project, I decided just to notate it as a future improvement.
+![Test coverage chart](src/assets/test_coverage.png)

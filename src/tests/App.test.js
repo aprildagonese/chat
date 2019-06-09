@@ -25,11 +25,4 @@ describe('App', () => {
     })
   })
 
-  it('should load messages into state', () => {
-    expect(wrapper.state().messages).toHaveLength(0)
-
-    wrapper = mount(<App/>)
-    expect(wrapper.state().messages).not.toHaveLength(0)
-  })
-
 })
