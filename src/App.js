@@ -28,7 +28,7 @@ export default class App extends React.Component {
       .then(currentUser => {
         this.currentUser = currentUser
         this.currentUser.subscribeToRoom({
-          roomId: "31224900",
+          roomId: "31225048",
           hooks: {
             onMessage: message => {
               this.setState({
@@ -46,7 +46,7 @@ export default class App extends React.Component {
   sendMessage = (text) => {
     this.currentUser.sendMessage({
       text: text,
-      roomId: "31224900"
+      roomId: "31225048"
     })
   }
 
