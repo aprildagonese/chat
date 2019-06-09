@@ -5,8 +5,8 @@ This project is a simple chat app that allows 2 users to exchange messages in a 
 In order to use the app with a friend, follow the instructions below.
 
 ## Table of Contents
-[Instructions](#instructions)
-[Tech Stack](#tech-stack)
+[Instructions](#instructions) . 
+[Tech Stack](#tech-stack) . 
 [Background on Design Decisions](#background-on-design-decisions)
 [Known Issues](#known-issues)
 [Test Coverage](#test-coverage)
