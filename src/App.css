@@ -1,7 +1,9 @@
-.message-list {
+#message-list {
   padding: 2%;
   max-height: 80%;
   overflow: auto;
+  position: relative;
+  bottom: 0;
 }
 
 .message-input {
