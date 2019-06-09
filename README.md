@@ -26,15 +26,19 @@ In order to use the app with a friend, follow the instructions below.
 ## Tech Stack
 - [Create React App](https://github.com/facebook/create-react-app)
 - [Pusher Chatkit](https://pusher.com/chatkit)
+- [Jest](https://jestjs.io/)
+- [Enzyme](https://airbnb.io/enzyme/)
 
 ## Background on Implementation Decisions
  This project was my first exposure to writing a chat app. My first thought for how to create a simple messenger with near-real-time, 2-directional communication was to hand roll a backend using Rails and websockets. This option was tempting because I'm most familiar with Rails and its go-to test suites, and because I could easily have built a frontend directly into the one service. I had never worked with websockets before, though, and I knew that other newbies have struggled with it in the past. Because this would have taught me the most and given me the greatest control over the message exchange, I still would have gone down this route, given additional time.
 
- The guidelines for time were 1-4 hours, however, so I investigated alternatives. I came across Pusher's Chatkit API, which had excellent documentation and appeared to be easy to implement. Because Pusher's service took care of the full message exchange and storage, and because I know that I can be slow at figuring out new technologies, this seemed like the best way to deliver an MVP in about 4 hours. (Which ended up more like 6-8 hours, including documentation time and fighting with an attempted Heroku deploy.) This way, I would only need to focus on a frontend that consumed the Chatkit API, and it would probably give me time to play around with testing options, which I've had very little experience with in React.
+ The guidelines for time were 1-4 hours, however, so I investigated alternatives. I came across Pusher's Chatkit API, which had excellent documentation and appeared to be easy to implement. Because Pusher's service took care of the full message exchange and storage, and because I know that I can be slow at figuring out new technologies, this seemed like the best way to deliver an MVP in about 4 hours. This way, I would only need to focus on a frontend that consumed the Chatkit API, and it would probably give me time to play around with testing options, which I've had very little experience with in React.
+ 
+ I'm about 6-8 hours in now, including documentation time and fighting with an attempted Heroku deploy, and I've produced a working basic chat app. I hit the goal of implementing some testing, and I'm pretty happy with my documentation. I'm irrationally annoyed that I didn't get autoscrolling to work on the MessagesList, but I'm forcing myself to step away from this now, before I accidentally spend another 8 hours.
 
 ## Known Issues
  1. MessageList does not autoscroll to the bottom on overflow. (It does scroll, but you have to do it manually any time new messages are added.)
- 2. App does not currently deploy to Heroku. Production config likely needs adjusting.
+ 2. Heroku build is showing successful, but displaying only a blank screen. Production config likely needs adjusting. https://rocky-citadel-71749.herokuapp.com/
  3. The app is currently using Chatkit's test token provider in place of any real authentication.
 
 ## Test Coverage
