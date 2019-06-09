@@ -4,6 +4,13 @@ This project is a simple chat app that allows 2 users to exchange messages in a 
 
 In order to use the app with a friend, follow the instructions below.
 
+## Table of Contents
+[Instructions]()
+[Tech Stack]()
+[Background on Design Decisions]()
+[Known Issues]()
+[Test Coverage]()
+
 ## Instructions
 1. Make a friend. Tell them to follow these instructions.
 2. Fork and clone this repository into the directory of your choice.
