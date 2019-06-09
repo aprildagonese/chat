@@ -13,7 +13,7 @@ In order to use the app with a friend, follow the instructions below.
 ![Instructional image](src/assets/instruction1.png)
 6. Run `npm start`
 7. Your browser should automatically load from your local server, but if it does not, navigate to [http://localhost:3000](http://localhost:3000). NOTE: The page will reload every time you make edits to the source code.
-8. In the browser, type a message and click enter to see your message displayed in the room. Once your friend messages back, you will see their messages displayed as "User 2"
+8. In the browser, type a message and click enter to see your message displayed in the room. Once your friend messages back, you will see their messages displayed as well.
 9. Happy chatting!
 
 ## Tech Stack
@@ -24,3 +24,7 @@ In order to use the app with a friend, follow the instructions below.
  This project was my first exposure to writing a chat app. My first thought for how to create a simple messenger with near-real-time, 2-directional communication was to hand roll a backend using Rails and websockets. This option was tempting because I'm most familiar with Rails and its go-to test suites, and because I could easily have built a frontend directly into the one service. I had never worked with websockets before, though, and I knew that other newbies have struggled with it in the past. Because this would have taught me the most and given me the greatest control over the message exchange, I still would have gone down this route, given additional time.
 
  The guidelines for time were 1-4 hours, however, so I investigated alternatives. I came across Pusher's Chatkit API, which had excellent documentation and appeared to be easy to implement. Because Pusher's service took care of the full message exchange and storage, and because I know that I can be slow at figuring out new technologies, this seemed like the best way to deliver an MVP in about 4 hours. (Which ended up more like 6-8 hours, including documentation time and fighting with an attempted Heroku deploy.) This way, I would only need to focus on a frontend that consumed the Chatkit API, and it would probably give me time to play around with testing options, which I've had very little experience with in React.
+
+## Known Issues
+ 1. MessageList does not autoscroll to the bottom on overflow. (It does scroll, but you have to do it manually.)
+ 2. App does not currently deploy to Heroku. Production config likely needs adjusting.
