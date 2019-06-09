@@ -3,11 +3,6 @@ import Message from './Message'
 
 export default class MessageList extends React.Component {
 
-  scrollToBottom = () => {
-    var messageBox = document.getElementById('message-list');
-    messageBox.scrollTop = messageBox.scrollHeight;
-  }
-
   render() {
     return (
       <div id="message-list">
@@ -17,7 +12,6 @@ export default class MessageList extends React.Component {
                      senderId={message.senderId}
                      text={message.text}/>
           )
-          {this.scrollToBottom()}
         })}
       </div>
     )
