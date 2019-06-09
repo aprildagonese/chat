@@ -26,5 +26,6 @@ In order to use the app with a friend, follow the instructions below.
  The guidelines for time were 1-4 hours, however, so I investigated alternatives. I came across Pusher's Chatkit API, which had excellent documentation and appeared to be easy to implement. Because Pusher's service took care of the full message exchange and storage, and because I know that I can be slow at figuring out new technologies, this seemed like the best way to deliver an MVP in about 4 hours. (Which ended up more like 6-8 hours, including documentation time and fighting with an attempted Heroku deploy.) This way, I would only need to focus on a frontend that consumed the Chatkit API, and it would probably give me time to play around with testing options, which I've had very little experience with in React.
 
 ## Known Issues
- 1. MessageList does not autoscroll to the bottom on overflow. (It does scroll, but you have to do it manually.)
+ 1. MessageList does not autoscroll to the bottom on overflow. (It does scroll, but you have to do it manually any time new messages are added.)
  2. App does not currently deploy to Heroku. Production config likely needs adjusting.
+ 3. The app is currently using Chatkit's test token provider in place of any real authentication.
