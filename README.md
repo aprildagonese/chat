@@ -36,7 +36,7 @@ In order to use the app with a friend, follow the instructions below.
  
  I'm about 6-8 hours in now (including time fighting with an attempted Heroku deploy), and I've produced a working basic chat app. I hit the goal of implementing some testing, and I'm pretty happy with my documentation. I'm irrationally annoyed that I didn't get autoscrolling to work on the MessagesList, but I'm forcing myself to step away from this now, before I accidentally spend another 8 hours. I also hit an issue with Heroku that I haven't seen before, where the build appears to be successful, but no content is displayed. If I had more time, I would love to figure out what's going on there.
  
- Overall, I'm pleased with my approach. Other than the fact that I have a dependency on a 3rd-party service, I think this was an efficient way of accomplishing a basic task that I've never done before. I did rely heavily on online tutorials for Chatkit and testing, which I want to be transparent about.
+ Overall, I'm pleased with my approach. Other than the fact that I have a dependency on a 3rd-party service, I think this was an efficient way of accomplishing a basic task that I've never done before. I did rely heavily on online tutorials for Chatkit and testing, which I want to be transparent about. I hand-typed all code and understand it fully, but I leaned on the tutorials to grasp chat interaction patterns and Chatkit's API in a short time.
 
 ## Known Issues
  1. MessageList does not autoscroll to the bottom on overflow. (It does scroll, but you have to do it manually any time new messages are added.)
